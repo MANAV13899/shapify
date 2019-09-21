@@ -1,0 +1,57 @@
+{
+  "name": "shapify",
+  "version": "1.1.0",
+  "main": "index.js",
+  "description": "Easily reshape objects",
+  "author": {
+    "name": "Eduardo San Martin Morote",
+    "email": "posva13@gmail.com"
+  },
+  "scripts": {
+    "lint": "eslint --fix --color *.js",
+    "pretest": "yarn lint",
+    "dev": "jest --watchAll",
+    "test:types": "tsc --build types/tsconfig.json",
+    "test:unit": "jest --collectCoverage",
+    "test": "yarn test:types && yarn test:unit"
+  },
+  "types": "types/index.d.ts",
+  "files": [
+    "index.js",
+    "types/index.d.ts",
+    "LICENSE"
+  ],
+  "keywords": [
+    "shape",
+    "reshape",
+    "transform",
+    "object",
+    "keys",
+    "adapt",
+    "rename",
+    "functional"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/posva/shapify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/posva/shapify/issues"
+  },
+  "homepage": "https://github.com/posva/shapify#readme",
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "codecov": "^3.2.0",
+    "eslint": "^6.0.1",
+    "eslint-config-posva": "^3.0.1",
+    "jest": "^24.5.0",
+    "typescript": "^3.3.4000"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "<rootDir>/*.spec.js"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "extends": ["posva"],
+  "env": {
+    "jest": true
+  }
+}
